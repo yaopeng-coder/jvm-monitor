@@ -5,9 +5,18 @@ import com.sun.btrace.AnyType;
 import com.sun.btrace.BTraceUtils;
 import com.sun.btrace.annotations.*;
 
+/**
+ * btrace测试类
+ */
 @BTrace
 public class PrintArgSimple {
-	
+
+    /**
+     * 普通方法拦截
+     * @param pcn
+     * @param pmn
+     * @param args
+     */
 	@OnMethod(
 	        clazz="cn.hust.jvmmonitor.chapter4.Ch4Controller",
 	        method="arg1",
